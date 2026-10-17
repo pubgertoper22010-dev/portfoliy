@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ᴀʜᴀᴘxиᴄᴛ ᴍᴇᴛʜᴀᴅᴏɴᴇ — кибербезопасность и разработка игр</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: dark;
+  --bg:#0e131d; --card:#141b28; --line:#26304280; --rule:#263042; --text:#d6dbe4; --dim:#8a94a6; --gold:#c9a45c;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:Inter,"Segoe UI",Roboto,Arial,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-underline-offset:4px}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+.hero{padding:120px 0 72px;text-align:center}
+.hero h1{margin:0;font:600 clamp(34px,7.5vw,72px)/1.1 var(--serif);letter-spacing:-.01em;color:#f1f3f7;overflow-wrap:anywhere}
+.hero .rule{width:64px;height:2px;background:var(--gold);margin:32px auto}
+.hero p{margin:0 auto;max-width:30em;font-size:20px;color:var(--dim)}
+.hero .role{font:400 clamp(20px,3vw,26px)/1.4 var(--serif);color:var(--gold);margin-bottom:14px}
+section{padding:56px 0;border-top:1px solid var(--rule)}
+h2{margin:0 0 28px;font:600 28px/1.2 var(--serif);color:#f1f3f7}
+section p{margin:0 0 1em;max-width:38em}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.lang{background:var(--card);border:1px solid var(--rule);padding:22px 20px;border-radius:3px}
+.lang b{display:block;font:600 26px var(--serif);color:#f1f3f7;margin-bottom:6px}
+.lang span{font-size:14px;color:var(--dim);line-height:1.4;display:block}
+.dirs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.dir{padding:6px 0 6px 20px;border-left:2px solid var(--gold)}
+.dir h3{margin:0 0 6px;font:600 21px var(--serif);color:#f1f3f7}
+.dir p{margin:0;color:var(--dim);font-size:16px}
+.contacts{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 24px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-weight:500;border-radius:2px;transition:background .15s,color .15s}
+.btn:hover{background:var(--gold);color:#0e131d}
+footer{padding:32px 0 48px;border-top:1px solid var(--rule);text-align:center;color:var(--dim);font-size:14px}
+@media(max-width:720px){
+  .hero{padding:80px 0 56px}
+  .stats{grid-template-columns:1fr 1fr}
+  .dirs{grid-template-columns:1fr;gap:24px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="hero">
+    <h1>ᴀʜᴀᴘxиᴄᴛ ᴍᴇᴛʜᴀᴅᴏɴᴇ</h1>
+    <div class="rule"></div>
+    <p class="role">Кибербезопасность и создание игр</p>
+    <p>Пишу код 3 года. Работаю на стыке защиты информации и игровой разработки.</p>
+  </div>
+
+  <section>
+    <h2>Обо мне</h2>
+    <p>Занимаюсь двумя направлениями: защитой информации и разработкой игр. Понимание того, как взламывают системы, помогает мне писать надёжный код, а игровая разработка даёт практику в архитектуре и производительности.</p>
+  </section>
+
+  <section>
+    <h2>Языки программирования</h2>
+    <div class="stats">
+      <div class="lang"><b>C++</b><span>производительный код, игровые движки</span></div>
+      <div class="lang"><b>C#</b><span>игры и приложения</span></div>
+      <div class="lang"><b>Python</b><span>автоматизация, инструменты безопасности</span></div>
+      <div class="lang"><b>Java</b><span>приложения и сервисы</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Направления</h2>
+    <div class="dirs">
+      <div class="dir"><h3>Кибербезопасность</h3><p>Анализ защищённости, изучение уязвимостей, безопасный код.</p></div>
+      <div class="dir"><h3>Создание игр</h3><p>Игровая логика, механики и системы: от идеи до рабочего прототипа.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Контакты</h2>
+    <div class="contacts">
+      <a class="btn" href="https://t.me/vlodt">Telegram: t.me/vlodt</a>
+      <a class="btn" href="https://vk.ru/vlodt">ВКонтакте: vk.ru/vlodt</a>
+    </div>
+  </section>
+</main>
+<footer>© 2026 ᴀʜᴀᴘxиᴄᴛ ᴍᴇᴛʜᴀᴅᴏɴᴇ</footer>
+</body>
+</html>
