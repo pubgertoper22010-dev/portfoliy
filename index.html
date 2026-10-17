@@ -36,6 +36,12 @@ section p{margin:0 0 1em;max-width:38em}
 .dir{padding:6px 0 6px 20px;border-left:2px solid var(--gold)}
 .dir h3{margin:0 0 6px;font:600 21px var(--serif);color:#f1f3f7}
 .dir p{margin:0;color:var(--dim);font-size:16px}
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:16px;list-style:none;margin:0;padding:0}
+.proj{background:var(--card);border:1px solid var(--rule);padding:22px 22px 24px;border-radius:3px}
+.proj small{display:block;font-size:13px;letter-spacing:.08em;color:var(--gold);margin-bottom:10px}
+.proj b{font:600 24px/1.25 var(--serif);color:#f1f3f7}
+.proj span{display:block;margin-top:12px;font-size:15px;color:var(--dim)}
+.proj span+span{margin-top:2px}
 .contacts{display:flex;gap:12px;flex-wrap:wrap}
 .btn{display:inline-block;padding:13px 24px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-weight:500;border-radius:2px;transition:background .15s,color .15s}
 .btn:hover{background:var(--gold);color:#0e131d}
@@ -44,6 +50,7 @@ footer{padding:32px 0 48px;border-top:1px solid var(--rule);text-align:center;co
   .hero{padding:80px 0 56px}
   .stats{grid-template-columns:1fr 1fr}
   .dirs{grid-template-columns:1fr;gap:24px}
+  .projects{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -78,6 +85,16 @@ footer{padding:32px 0 48px;border-top:1px solid var(--rule);text-align:center;co
       <div class="dir"><h3>Кибербезопасность</h3><p>Анализ защищённости, изучение уязвимостей, безопасный код.</p></div>
       <div class="dir"><h3>Создание игр</h3><p>Игровая логика, механики и системы: от идеи до рабочего прототипа.</p></div>
     </div>
+  </section>
+
+  <section>
+    <h2>Проекты</h2>
+    <ul class="projects">
+      <li class="proj"><small>CRMP</small><b>Bloom Russia</b><span>Владелец и создатель</span><span>Открытие: 17.10.2026</span></li>
+      <li class="proj"><small>CRMP</small><b>King Mobile</b><span>Владелец и создатель</span><span>Открытие: 07.05.2026</span></li>
+      <li class="proj"><small>CRMP</small><b>Nezzir Roleplay</b><span>Владелец и создатель</span><span>Открытие: 23.02.2025</span></li>
+      <li class="proj"><small>CRMP</small><b>Dubai Russia</b><span>Владелец и создатель</span><span>Открытие: 2024 год</span></li>
+    </ul>
   </section>
 
   <section>
